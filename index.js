@@ -14,7 +14,7 @@ const user = require('./routes/user_routes')
 // ===========================
 // 🔗 Koneksi ke MongoDB
 // ===========================
-mongoose.connect('mongodb://127.0.0.1:27017/unpam', {
+mongoose.connect(process.env.MONGO, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
